@@ -1,0 +1,58 @@
+// exercise 4.19
+
+#include <stdio.h>
+int main ()
+{
+printf("Product Number\t");
+printf("Retail Price\n\n");
+printf("Product 1\t");
+printf("2.98$\n\n");
+printf("product 2\t");
+printf("4.50$\n\n");
+printf("Product 3\t");
+printf("9.98$\n\n");
+printf("Product 4\t");
+printf("4.49$\n\n");
+printf("Product 5\t");
+printf("6.87$\n\n\n");
+int quantity;
+int Pnumber;
+double totalweek = 0;
+double total;
+int counter = 1;
+while (counter <= 7)
+{
+totalweek = totalweek + total;
+printf(" the retail value in the day number %d\n",counter);
+printf("Enter the product number you want to get\n");
+scanf("%d",&Pnumber);
+printf("Enter the quantity of the product you want to get\n");
+scanf("%d",&quantity);
+switch (Pnumber) {
+case 1 :
+total = ( quantity * 2.98 );
+printf("it will cost you %lf\n",total);
+break;
+case 2 :
+total = ( quantity * 4.50 );
+printf("it will cost you %lf\n",total);
+break;
+case 3 :
+total = ( quantity * 9.98);
+printf("it will cost you %lf\n",total);
+break;
+case 4 :
+total = ( quantity * 4.49);
+printf("it will cost you %lf\n",total);
+break;
+case 5 :
+total = ( quantity *6.87);
+printf("it will cost you %lf\n",total);
+break;
+}
+counter ++;
+}
+printf("the total retail value of all products sold last week : %lf $ \n",totalweek);
+
+return 0;
+}
