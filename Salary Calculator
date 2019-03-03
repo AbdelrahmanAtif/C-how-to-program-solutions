@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float rate,salary;
+int hours;
+printf("Enter employee of hours worked\n");
+scanf("%d",&hours);
+if (hours==-1)
+{
+return 0;
+}
+printf("Enter hourly rate of the worker\n");
+scanf("%f",&rate);
+if (hours <= 40)
+{
+salary = hours * rate;
+printf("salary of the employee is %f\n",salary);
+}
+else if (hours > 40)
+{
+salary = (hours * rate) + (0.5 * rate);
+printf("salary of the employee is %f\n",salary);
+}
+return 0;
+}
